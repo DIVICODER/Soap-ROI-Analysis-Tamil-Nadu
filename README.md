@@ -1,60 +1,64 @@
-🧼 Soap ROI Analysis – Tamil Nadu (Power BI Project)
-📊 Overview
-This Power BI project analyzes the Return on Investment (ROI) for launching a Soap product in various Indian states, with a particular focus on Tamil Nadu. The objective is to identify the most promising state for product launch based on marketing efficiency and revenue returns.
+# 🧼 Soap ROI Analysis – Tamil Nadu (Power BI Project)
 
-🎯 Business Goal
-To evaluate which Indian state offers the best marketing ROI for launching a soap product and to recommend whether Tamil Nadu is a viable market for high returns.
+## 📊 Overview
+This Power BI project analyzes the **Return on Investment (ROI)** for launching a **soap product** across different Indian states. The focus is on evaluating the marketing efficiency in **Tamil Nadu**, helping identify whether it is a profitable region for a new product launch.
 
-🧩 Dataset Summary
-The dataset includes the following columns:
+---
 
-State
+## 🎯 Business Goal
+To determine which Indian state offers the **best ROI** for launching soap, and whether Tamil Nadu is a **strategic location** for high marketing returns.
 
-Year
+---
 
-Product (focused on 'Soap')
+## 🧩 Dataset Summary
+The dataset includes the following fields:
 
-Revenue_INR_Lakhs
+- `State`
+- `Year`
+- `Product` (Soap-focused)
+- `Revenue_INR_Lakhs`
+- `Marketing_Spend_INR_Lakhs`
 
-Marketing_Spend_INR_Lakhs
+---
 
-📈 Key Metrics Used
-Total Revenue
+## 📈 Key Metric Used
 
-Total Marketing Spend
-
-ROI (%) calculated using:
-
-DAX
-Copy
-Edit
+**ROI Calculation (in DAX):**
+```DAX
 ROI = 
 ((SUM(Revenue_INR_Lakhs) - SUM(Marketing_Spend_INR_Lakhs)) 
 / SUM(Marketing_Spend_INR_Lakhs)) * 100
-📌 Insights
-Tamil Nadu has one of the highest ROI values for Soap, indicating efficient marketing.
+```
 
-However, year-wise ROI trend in Tamil Nadu is inconsistent, suggesting short-term gains but potential long-term instability.
+## 📌 Insights
 
-Comparing ROI across states and years helps prioritize markets that are both profitable and stable.
+- **Tamil Nadu has a high ROI for Soap**, suggesting efficient marketing spend.
+- **ROI is inconsistent over the years in Tamil Nadu**, indicating short-term potential but **long-term volatility**.
+- **Comparing ROI across other states** reveals alternatives that may offer **more stable long-term growth**.
 
-📊 Visuals in Dashboard
-Bar Chart: ROI by State
+---
 
-Line Chart: ROI by Year per State
+## 📊 Visuals in the Dashboard
 
-KPI Cards: Total Revenue, Marketing Spend, ROI
+- **Bar Chart** – ROI by State  
+- **Line Chart** – Year-wise ROI Trend  
+- **KPI Cards** – Total Revenue, Marketing Spend, and ROI  
+- **Slicers/Filters** – Product, State, and Year filters for drill-down analysis  
 
-Filter Panels: Product Type, Year, and State
+---
 
-🧠 Recommendation
-Tamil Nadu is a profitable region to launch the soap product, especially for short-term or limited campaigns. For long-term investments, monitor ROI trends over time or consider diversifying into more stable markets.
+## 🧠 Final Recommendation
 
-🛠 Tools Used
-Power BI (Desktop)
+- Tamil Nadu is a **high-potential market** for launching Soap if the goal is **short-term ROI**.
+- For **long-term campaigns**, further analysis of year-wise trends is recommended.
+- Consider **diversifying into stable high-ROI states** to ensure consistent long-term marketing success.
 
-Power Query (for cleaning data)
+---
 
-DAX (for custom calculations)
+## 🛠 Tools Used
 
-Excel (source data preparation)
+- **Power BI Desktop** – For visualization and dashboard creation  
+- **Power Query** – For data cleaning and transformation  
+- **DAX** – For calculated metrics like ROI  
+- **Excel** – For initial dataset preparation and structure  
+
